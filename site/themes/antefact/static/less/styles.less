@@ -1,0 +1,220 @@
+@import "bootstrap/bootstrap.less";
+@import "../css/aos.css";
+@import "font-awesome/less/font-awesome.less";
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans|Space+Mono'); //colors
+@yellow: #FDFF59;
+@black: #000;
+@white: #fff;
+// Font-Size
+@base-font-size: 1em; // Line-Height
+@base-line-height: 1.5;
+@header-line-height: 1.25; //sizes
+@bp-small: 48em; // 768px
+@bp-medium: 64em; // 1024px
+@bp-large: 85.375em; // 1366px
+@bp-xlarge: 120em; // 1920px
+@bp-xxlarge: 160em; // 2560px
+// Media Queries
+@mq-small: ~"(min-width: @{bp-small})";
+@mq-medium: ~"(min-width: @{bp-medium})";
+@mq-large: ~"(min-width: @{bp-large})";
+@mq-xlarge: ~"(min-width: @{bp-xlarge})";
+@mq-xxlarge: ~"(min-width: @{bp-xxlarge})";
+@mq-retina: ~"(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+@navbar-height: 70px;
+
+.transition (@transition) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -ms-transition: @transition;
+    -o-transition: @transition;
+}
+
+.transform (@transform) {
+    -webkit-transform: @transform;
+    -moz-transform: @transform;
+    -ms-transform: @transform;
+    -o-transform: @transform;
+    transform: @transform;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Space Mono', monospace;
+
+    a:focus,
+    a:hover {
+        text-decoration: none;
+    }
+    .transition( font-size 1s);
+}
+
+h1 {
+    font-size: @base-font-size*3;
+    @media @mq-medium {
+        font-size: @base-font-size*6;
+    }
+    @media @mq-large {
+        font-size: @base-font-size*6;
+    }
+    @media @mq-xlarge {
+        font-size: @base-font-size*10;
+    }
+    @media @mq-xxlarge {
+        font-size: @base-font-size*12;
+    }
+}
+
+h2 {
+    //  font-size: @base-font-size*3;
+    font-size: @base-font-size*2;
+    @media @mq-medium {
+        font-size: @base-font-size*2;
+    }
+    @media @mq-large {
+        font-size: @base-font-size*2.8;
+    }
+    @media @mq-xlarge {
+        font-size: @base-font-size*3.5;
+    }
+    @media @mq-xxlarge {
+        font-size: @base-font-size*4;
+    }
+}
+
+p {
+  font-family: 'Space Mono', monospace;
+
+    font-size: @base-font-size*1;
+    @media @mq-medium {
+        font-size: @base-font-size*1;
+    }
+    @media @mq-large {
+        font-size: @base-font-size*1.5;
+    }
+    @media @mq-xlarge {
+        font-size: @base-font-size*1.5;
+    }
+    @media @mq-xxlarge {
+        font-size: @base-font-size*2;
+    }
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+.fill {
+    height: 100%;
+}
+
+.middle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#hero {
+    text-align: center;
+    height: 100%;
+
+    .middle {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .title-container {
+        background-color: @yellow;
+        width: 100%;
+        height: 4em;
+        margin-bottom: 7em;
+
+
+        h1 {
+            font-size: 6em !important;
+            height: 50%;
+            border-bottom: 10px dotted @black;
+            display: inline;
+            @media @mq-medium {
+                font-size: @base-font-size*6;
+            }
+            @media @mq-large {
+                font-size: @base-font-size*6;
+            }
+            @media @mq-xlarge {
+                font-size: @base-font-size*10;
+            }
+            @media @mq-xxlarge {
+                font-size: @base-font-size*12;
+            }
+        }
+    }
+}
+
+#mainNav {
+    background-color: transparent;
+    border: none;
+}
+
+.btn.btn-primary.btn-lg {
+    background-color: @white;
+    border: 1px solid black;
+    color: @black;
+    border-radius: 0;
+}
+
+img.responsive-images{
+  max-width: 100%;
+}
+
+#process-animation{
+
+}
+
+#process-explained{
+ .step{
+   margin-top: 2em;
+ }
+}
+
+#contacts{
+  background-image: url(../img/contacts.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.underlined{
+  display: inline;
+    background: @yellow;
+    box-shadow: 10px 10px 0 @white, -10px 0 0 @black;
+    line-height: 2em;
+}
+#footer{
+
+    min-height: 270px;
+padding-top:30px;
+  .roundpic {
+      width: 100%;
+      border-radius: 100px;
+      border: 10px solid #FDFF59;
+      background-color: transparent;
+  }
+}
