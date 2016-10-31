@@ -46,6 +46,8 @@ html {
 body {
     height: 100%;
     width: 100%;
+    font-family: 'Space Mono', monospace;
+
 }
 
 h1,
@@ -96,10 +98,11 @@ h2 {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: @base-font-size*1.5;
+  font-family: 'Space Mono', monospace;
+
+    font-size: @base-font-size*1;
     @media @mq-medium {
-        font-size: @base-font-size*1.5;
+        font-size: @base-font-size*1;
     }
     @media @mq-large {
         font-size: @base-font-size*1.5;
@@ -175,4 +178,25 @@ a:hover {
     border: 1px solid black;
     color: @black;
     border-radius: 0;
+}
+
+img.responsive-images{
+  max-width: 100%;
+}
+
+#process-animation{
+
+}
+
+#process-explained{
+ .step{
+   margin-top: 2em;
+ }
+}
+
+
+.underlined{
+  display: inline;
+    background: @yellow;
+    box-shadow: 10px 0 0 @yellow, -10px 0 0 @yellow;
 }

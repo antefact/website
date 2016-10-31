@@ -41,6 +41,33 @@ theme ="antefact"
   description="Not everything needs to be build at the same time, to understand the potential or the pitfalls of an idea we build things just real enough to be fast in iterating many of them."
 
 
+
+  #section process
+  [params.process]
+  [[params.process.steps]]
+  name="dive"
+  title="Dive and prepare"
+  paragraph="We dive in your company/studio to learn about your process and needs. We start by creating ad-hoc hands-on workshops to start working together and learn about the focus of the project."
+  image=""
+  align="left"
+
+  [[params.process.steps]]
+  name="iterate"
+  title="Iterations(i * n)"
+  paragraph="We dive in your company/studio to learn about your process and needs. We start by creating ad-hoc hands-on workshops to start working together and learn about the focus of the project."
+  image=""
+  align="right"
+
+
+  [[params.process.steps]]
+  name="document"
+  title="Document and Share"
+  paragraph="We document the process and create shareable learnings for you. From pictures to short videos, to prototyping kits we close the loop of the project leaving you the tools to convince others or to continue prototype and test by yourself."
+  image=""
+  align="left"
+
+
+
   # Navigation
 	[params.navigation]
 		brand = "brand"

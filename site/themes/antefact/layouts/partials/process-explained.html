@@ -1,0 +1,20 @@
+<section id="process-explained" class="fill container">
+    <div class="row">
+
+        <div class="col-md-12 ">
+
+            {{range .Site.Params.process.steps}}
+                <div class="step row">
+                    <div class="title col-md-3 col-sm-12 col-xs-12 pull-{{.align}}">
+                          <h2 class="underlined">{{.title}}</h2>
+                    </div>
+
+                    <div class="paragraph col-md-7 col-sm-12 col-xs-12">
+                        {{.paragraph}}
+                    </div>
+
+                </div>
+            {{end}}
+        </div>
+    </div>
+</section>
