@@ -24,9 +24,9 @@ Startup a hugo project with:
 - `grunt edit`	Starts the local server and watches the filesystem for changes. The site can be viewed at http://127.0.0.1:8080/.
 
 ### notes:
-- the main css file you should edit is placed inside site/themes/zen/static/less/styles.less
+- the main css file you should edit is placed inside site/themes/antefact/static/less/styles.less
 - images for the blog post that need to be resized should be placed inside a img foolder at the root of the project, the different image sizes will be generated according to the gruntfile
-- svg should be placed inside site/themes/zen/static/svg they will be combined as sprites in a single file in site/themes/zen/static/symbol/svg/sprite.symbol.svg
+- svg should be placed inside site/themes/antefact/static/svg they will be combined as sprites in a single file in site/themes/antefact/static/symbol/svg/sprite.symbol.svg
 
 
 based on [http://tjm.io/grunt-hugo/](http://tjm.io/grunt-hugo/) tutorial
