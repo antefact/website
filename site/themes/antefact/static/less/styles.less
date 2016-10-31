@@ -1,17 +1,10 @@
 @import "bootstrap/bootstrap.less";
 @import "../css/aos.css";
 @import "font-awesome/less/font-awesome.less";
-
-//colors
-
-@cyan: #34BCEF;
-@magenta: #E0107C;
-@dark-gray: #3F4346;
-@light-gray: #EFEFEF;
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans|Space+Mono'); //colors
+@yellow: #FDFF59;
+@black: #000;
 @white: #fff;
-@rat: #9B928C;
-
-
 // Font-Size
 @base-font-size: 1em; // Line-Height
 @base-line-height: 1.5;
@@ -37,7 +30,20 @@
     -o-transition: @transition;
 }
 
+.transform (@transform) {
+    -webkit-transform: @transform;
+    -moz-transform: @transform;
+    -ms-transform: @transform;
+    -o-transform: @transform;
+    transform: @transform;
+}
+
 html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
     height: 100%;
     width: 100%;
 }
@@ -47,6 +53,7 @@ h2,
 h3,
 h4,
 h5 {
+    font-family: 'Space Mono', monospace;
 
     a:focus,
     a:hover {
@@ -56,18 +63,18 @@ h5 {
 }
 
 h1 {
-    //  font-size: @base-font-size*3;
+    font-size: @base-font-size*3;
     @media @mq-medium {
-        font-size: @base-font-size*3;
+        font-size: @base-font-size*6;
     }
     @media @mq-large {
-        font-size: @base-font-size*3;
+        font-size: @base-font-size*6;
     }
     @media @mq-xlarge {
-        font-size: @base-font-size*5;
+        font-size: @base-font-size*10;
     }
     @media @mq-xxlarge {
-        font-size: @base-font-size*8;
+        font-size: @base-font-size*12;
     }
 }
 
@@ -89,6 +96,7 @@ h2 {
 }
 
 p {
+    font-family: 'Open Sans', sans-serif;
     font-size: @base-font-size*1.5;
     @media @mq-medium {
         font-size: @base-font-size*1.5;
@@ -104,6 +112,61 @@ p {
     }
 }
 
-a:hover, a:focus{
-  text-decoration: none;
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+.fill {
+    height: 100%;
+}
+
+#hero {
+    text-align: center;
+    height: 100%;
+
+    .middle {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .title-container {
+        background-color: @yellow;
+        width: 100%;
+        height: 4em;
+        margin-bottom: 7em;
+
+
+        h1 {
+            font-size: 6em !important;
+            height: 50%;
+            border-bottom: 10px dotted @black;
+            display: inline;
+            @media @mq-medium {
+                font-size: @base-font-size*6;
+            }
+            @media @mq-large {
+                font-size: @base-font-size*6;
+            }
+            @media @mq-xlarge {
+                font-size: @base-font-size*10;
+            }
+            @media @mq-xxlarge {
+                font-size: @base-font-size*12;
+            }
+        }
+    }
+}
+
+#mainNav {
+    background-color: transparent;
+    border: none;
+}
+
+.btn.btn-primary.btn-lg {
+    background-color: @white;
+    border: 1px solid black;
+    color: @black;
+    border-radius: 0;
 }

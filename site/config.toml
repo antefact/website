@@ -10,8 +10,8 @@ theme ="antefact"
 
 	# All blog posts are defined in their own files.
 
-	name = "your site name"
-	claim = "we have what you want"
+	name = "Antefact"
+	claim = "Quick design iteration to build interactive futures"
 
   # Navigation
 	[params.navigation]
