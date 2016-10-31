@@ -1,4 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "antefact.github.io/website"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme ="antefact"
@@ -66,6 +66,16 @@ theme ="antefact"
   image=""
   align="left"
 
+
+  #contacts
+
+  [params.contacts]
+  paragraph="Our team used to be designers and prototypers at Arduino, Frog, Tellart.We have worked for --- --- --- Now Based in glamourous CHINA to stay closer to where things are done!"
+
+  #footer
+  [params.footer]
+  line1="We are in Beijing and Shanghai."
+  line2="Drop us a line hi[at]antefact.com"
 
 
   # Navigation
