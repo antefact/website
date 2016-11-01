@@ -14,12 +14,11 @@ window.onload = function() {
 
     $('#hero em').replaceWith($('#hero .replacement_verbs'));
 
-
+    randomTextInHero();
     setInterval(function(){
       randomTextInHero();
       console.log("update");
     }, 3000);
-
     $('#hero .claim ul').click(function(){
       randomTextInHero();
     });

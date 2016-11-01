@@ -9202,6 +9202,9 @@ a:hover {
   text-align: center;
   height: 100%;
 }
+#hero .claim {
+  margin: 5em 0 3em;
+}
 #hero .claim ul {
   display: inline-block;
   margin: 0;
