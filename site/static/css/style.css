@@ -9202,6 +9202,34 @@ a:hover {
   text-align: center;
   height: 100%;
 }
+#hero .claim ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 1.3em;
+  overflow: hidden;
+  margin-top: 2px;
+  position: relative;
+  top: 8px;
+}
+#hero .claim ul li {
+  background-color: #000;
+  color: #fff;
+  margin-top: 0;
+  top: 0;
+  position: relative;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  padding: 9px;
+}
+#hero em {
+  color: #fff;
+  background-color: #000;
+}
 #hero .middle {
   position: relative;
   top: 50%;
@@ -9256,7 +9284,7 @@ img.responsive-images {
   margin-top: 2em;
 }
 #contacts {
-  background-image: url(../img/contacts.jpeg);
+  background-image: url("../img/contacts.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

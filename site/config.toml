@@ -14,7 +14,7 @@ theme ="antefact"
   [params.hero]
   name = "Antefact"
 	claim = "Quick design iteration to _build_ interactive futures"
-  replacement_verbs= ["build","build","imagine"]
+  replacement_verbs= ["generate","design","imagine"]
 
 
   [[params.hero.buttons]]

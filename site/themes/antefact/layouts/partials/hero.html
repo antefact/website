@@ -3,7 +3,7 @@
         <div class="title-container">
             <h1 >{{ .Site.Params.hero.name }}</h1>
         </div>
-        <h3>{{ .Site.Params.hero.claim | markdownify}}</h3>
+        <h3 class="claim">{{ .Site.Params.hero.claim | markdownify}}</h3>
         <ul class="replacement_verbs">
           {{range  .Site.Params.hero.replacement_verbs}}
           <li class="verb">{{.}}</li>
