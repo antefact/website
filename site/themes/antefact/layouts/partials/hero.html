@@ -3,8 +3,12 @@
         <div class="title-container">
             <h1 >{{ .Site.Params.hero.name }}</h1>
         </div>
-        <h3 class="lead">{{ .Site.Params.hero.claim }}</h3>
-
+        <h3>{{ .Site.Params.hero.claim | markdownify}}</h3>
+        <ul class="replacement_verbs">
+          {{range  .Site.Params.hero.replacement_verbs}}
+          <li class="verb">{{.}}</li>
+          {{end}}
+        </ul>
 
         {{range .Site.Params.hero.buttons}}
             <a class="btn btn-primary btn-lg" href="{{.link}}" role="button">{{.name}}</a>

@@ -1,4 +1,4 @@
-baseurl = "antefact.github.io/website"
+baseurl = "https://antefact.github.io/website/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme ="antefact"
@@ -10,12 +10,12 @@ theme ="antefact"
 
 	# All blog posts are defined in their own files.
 
-
-
   #hero
   [params.hero]
   name = "Antefact"
-	claim = "Quick design iteration to build interactive futures"
+	claim = "Quick design iteration to _build_ interactive futures"
+  replacement_verbs= ["build","build","imagine"]
+
 
   [[params.hero.buttons]]
     name="tell me more"

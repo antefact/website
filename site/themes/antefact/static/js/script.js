@@ -12,4 +12,10 @@ window.onload = function() {
     $('body').scrollspy({target: ".navbar"});
     AOS.init();
 
+
+    var replacement_verbs=$('#hero .ul.replacement_verbs');
+    console.log(replacement_verbs);
+
+
+
 }
