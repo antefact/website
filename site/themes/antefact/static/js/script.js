@@ -12,30 +12,31 @@ window.onload = function() {
     $('body').scrollspy({target: ".navbar"});
     AOS.init();
 
-
-    //text with list in the hero
     $('#hero em').replaceWith($('#hero .replacement_verbs'));
-    var replacement_verbs=$('#hero .replacement_verbs li');
-
-    var randomtop=$('#hero .claim ul li').outerHeight() * Math.floor(Math.random()*replacement_verbs.length)+9;
-
-    console.log(randomtop);
-
-    $('#hero .claim ul li').css("top",randomtop*-1); //modify top position
 
 
+    setInterval(function(){
+      randomTextInHero();
+      console.log("update");
+    }, 3000);
 
-    //this replace the first text with a random one from the list;
-    /*
-      var replacement_verbs=$('#hero .replacement_verbs li');
-      var randomName=replacement_verbs.eq(Math.floor(Math.random()*replacement_verbs.length)).text();
-      console.log(randomName);
-      $('#hero em').html(randomName);
-      console.log(replacement_verbs);
-    */
-
-
-
-
+    $('#hero .claim ul').click(function(){
+      randomTextInHero();
+    });
 
 }
+
+var randomTextInHero= function(){
+  var replacement_verbs=$('#hero .replacement_verbs li');
+  var randomtop=$('#hero .claim ul li').outerHeight() * Math.floor(Math.random()*replacement_verbs.length)+9;
+  $('#hero .claim ul li').css("top",randomtop*-1); //modify top position
+}
+
+
+/*
+  var replacement_verbs=$('#hero .replacement_verbs li');
+  var randomName=replacement_verbs.eq(Math.floor(Math.random()*replacement_verbs.length)).text();
+  console.log(randomName);
+  $('#hero em').html(randomName);
+  console.log(replacement_verbs);
+*/

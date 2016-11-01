@@ -9219,11 +9219,11 @@ a:hover {
   margin-top: 0;
   top: 0;
   position: relative;
-  transition: all 0.5s linear;
-  -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  -ms-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
+  transition: all 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  -webkit-transition: all 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  -moz-transition: all 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  -ms-transition: all 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  -o-transition: all 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
   padding: 9px;
 }
 #hero em {
