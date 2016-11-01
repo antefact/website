@@ -17,7 +17,6 @@ window.onload = function() {
     randomTextInHero();
     setInterval(function(){
       randomTextInHero();
-      console.log("update");
     }, 3000);
     $('#hero .claim ul').click(function(){
       randomTextInHero();
