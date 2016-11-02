@@ -9092,6 +9092,31 @@ body {
   width: 100%;
   font-family: 'Space Mono', monospace;
 }
+@media (min-width: 48em) {
+  .container {
+    width: 48em !important;
+  }
+}
+@media (min-width: 64em) {
+  .container {
+    width: 64em !important;
+  }
+}
+@media (min-width: 85.375em) {
+  .container {
+    width: 85em !important;
+  }
+}
+@media (min-width: 120em) {
+  .container {
+    width: 120em !important;
+  }
+}
+@media (min-width: 160em) {
+  .container {
+    width: 160em !important;
+  }
+}
 h1,
 h2,
 h3,
@@ -9319,8 +9344,8 @@ img.responsive-images {
     display: table;
   }
 }
-@media (min-width: 64em) {
-  #about .row .col {
+@media (min-width: 48em) {
+  #about .row .col-table {
     display: table-cell;
     float: none;
     vertical-align: middle;
@@ -9343,4 +9368,19 @@ img.responsive-images {
 }
 #about .special.button svg.icon {
   max-width: 100%;
+  stroke-width: 0.5em;
+}
+#process-explained .paragraph {
+  text-align: justify;
+}
+#process-explained .drawing {
+  position: absolute;
+  top: -90px;
+  margin: auto;
+}
+#process-explained .step .title {
+  text-align: center;
+}
+#process-explained .step .title h2 {
+  max-width: 50%;
 }

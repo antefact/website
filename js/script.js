@@ -41,6 +41,25 @@ window.onload = function() {
 
     //load the asset fot the animation
     var processAnim =new Vivus('process-animation', {duration: 200, file: 'svg/process.svg'}, function(){});
+    var dive =new Vivus('process-explained-dive', {duration: 100, file: 'svg/dive.svg'}, function(){});
+
+
+    //load the audio file for tofu
+    var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'sound/tofu.mp3');
+        audioElement.setAttribute('autoplay', 'autoplay');
+        //audioElement.load()
+        $.get();
+        audioElement.addEventListener("load", function() {
+        audioElement.play();
+        }, true);
+
+
+
+        $('.tofu').click(function() {
+        audioElement.play();
+      });
+
 }
 
 
@@ -50,6 +69,9 @@ var randomTextInHero= function(){
   var randomtop=$('#hero .claim ul li').outerHeight() * Math.floor(Math.random()*replacement_verbs.length)+9;
   $('#hero .claim ul li').css("top",randomtop*-1); //modify top position
 }
+
+
+
 
 
 /*
