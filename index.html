@@ -29,7 +29,7 @@
   <body>
 
 
-  <section id="hero" class="fill">
+  <section id="hero" class="fill" data-aos="fade-in">
     <div class="middle">
         <div class="title-container">
             <h1 >Antefact</h1>
@@ -54,17 +54,61 @@
         </ul>
 
         
-            <a class="btn btn-primary btn-lg" href="" role="button">tell me more</a>
+            <a class="btn btn-primary btn-lg" href="#about" role="button">tell me more</a>
         
-            <a class="btn btn-primary btn-lg" href="" role="button">contacts</a>
+            <a class="btn btn-primary btn-lg" href="#contacts" role="button">contacts</a>
         
     </div>
 </section>
 
-  <section id="about" class="fill container">
 
-    <div class="row">
-        <div class="col-md-8">
+  <nav id="mainNav" class="navbar navbar-default" data-spy="affix" data-offset-top="500">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#hero">
+              <span>
+                brand
+              </span>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+
+                    
+                        <li>
+                            <a class="page-scroll" href="#about">
+                                about
+                            </a>
+                        </li>
+                    
+                
+
+                    
+                        <li>
+                            <a class="page-scroll" href="#process-animation">
+                                process
+                            </a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <section id="about" class="fill container" data-aos="fade-in">
+
+    <div class="row middle" >
+        <div class="col col-md-8 col-sm-12">
             
                 <div class="weDo">
                     <h2>
@@ -101,23 +145,33 @@
             
         </div>
 
-        <div class="col-md-4 fill">
-            <div class="special button btn btn-lg btn-primary middle">
+        <div class=" col col-md-4 col-sm-12 fill">
+            <div class="special button btn btn-lg btn-primary">
               <a href="">
                 HOW DOES IT WORK?
               </a>
+
+              <svg class="icon">
+                  <use xlink:href="https://antefact.github.io/website/symbol/svg/sprite.symbol.svg#double_arrow"></use>
+              </svg>
+
             </div>
         </div>
     </div>
 </section>
 
-  <section id="process-animation" class="fill container">
+  <section id="process-animation" class="fill container" data-aos="fade-in">
   <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <img class="responsive-images" src="https://antefact.github.io/website/img/process.png">
-      </div>
-    </div>
 
+        
+
+        <div id="process-animation">
+        </div>
+       
+
+        </div>
+    </div>
 </section>
 
   <section id="process-explained" class="fill container">
@@ -175,7 +229,6 @@
 </section>
 
 
-  
 
 <section id="footer" class="container">
   <div class="row ">
@@ -198,6 +251,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/vivus.min.js"></script>
     <script src="https://cdn.rawgit.com/stml/welcomejs/0dccd5025823fa0d340cdc6b4ced51586a6ab1e3/welcome.js"></script>
 
 </body>

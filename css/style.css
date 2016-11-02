@@ -9247,7 +9247,7 @@ a:hover {
 #hero .title-container h1 {
   font-size: 6em !important;
   height: 50%;
-  border-bottom: 10px dotted #000;
+  border-bottom: 2px solid #000;
   display: inline;
 }
 @media (min-width: 64em) {
@@ -9273,6 +9273,12 @@ a:hover {
 #mainNav {
   background-color: transparent;
   border: none;
+  display: none;
+}
+#mainNav.affix {
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 .btn.btn-primary.btn-lg {
   background-color: #fff;
@@ -9307,4 +9313,34 @@ img.responsive-images {
   border-radius: 100px;
   border: 10px solid #FDFF59;
   background-color: transparent;
+}
+@media (min-width: 64em) {
+  #about .row {
+    display: table;
+  }
+}
+@media (min-width: 64em) {
+  #about .row .col {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+  }
+}
+#about .special.button {
+  background-color: #FDFF59;
+  border: none;
+  color: #000;
+  width: 10em;
+  height: 10em;
+  margin: auto;
+  display: block;
+}
+#about .special.button a {
+  color: #000;
+  position: relative;
+  text-overflow: initial;
+  white-space: normal;
+}
+#about .special.button svg.icon {
+  max-width: 100%;
 }
