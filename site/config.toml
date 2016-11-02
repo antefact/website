@@ -27,8 +27,8 @@ theme ="antefact"
   showMoreButtonText="HOW DOES IT WORK?"
 
   [[params.about.weDo]]
-  title="We build ante-facts, "
-  description="or things before the real thing. Things you or your customer can interact with .Things that you can learn from. Things that you didn’t think about until you built them."
+  title="We are a prototyping team "
+  description="we build antefacts, or things before the real thing. Things you or your customer can interact with .Things that you can learn from. Things that you didn’t think about until you built them."
 
   [[params.about.weDo]]
   title="We iterate for you"
