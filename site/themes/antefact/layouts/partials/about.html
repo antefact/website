@@ -1,7 +1,7 @@
 <section id="about" class="fill container">
 
-    <div class="row">
-        <div class="col-md-8">
+    <div class="row middle">
+        <div class="col col-md-8 col-sm-12">
             {{range .Site.Params.about.weDo}}
                 <div class="weDo">
                     <h2>
@@ -16,11 +16,16 @@
             {{end}}
         </div>
 
-        <div class="col-md-4 fill">
-            <div class="special button btn btn-lg btn-primary middle">
+        <div class=" col col-md-4 col-sm-12 fill">
+            <div class="special button btn btn-lg btn-primary">
               <a href="">
                 {{ .Site.Params.about.showMoreButtonText}}
               </a>
+
+              <svg class="icon animated bounce">
+                  <use xlink:href="{{.Site.BaseURL}}symbol/svg/sprite.symbol.svg#double_arrow"></use>
+              </svg>
+
             </div>
         </div>
     </div>
