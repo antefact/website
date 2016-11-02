@@ -19,10 +19,10 @@ theme ="antefact"
 
   [[params.hero.buttons]]
     name="tell me more"
-    link=""
+    link="#about"
   [[params.hero.buttons]]
     name="contacts"
-    link=""
+    link="#contacts"
 
   #section about
   [params.about]

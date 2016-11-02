@@ -1,7 +1,7 @@
 var $root = $('html, body');
 $('a').click(function() {
     $root.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top-$( window ).height()
+        scrollTop: $($.attr(this, 'href')).offset().top
           }, 500);
     return false;
 });
@@ -10,6 +10,7 @@ var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimation
 window.onload = function() {
     //add scrollspy to activate menu on scroll
     $('body').scrollspy({target: ".navbar"});
+
     AOS.init();
 
     $('#hero em').replaceWith($('#hero .replacement_verbs'));
