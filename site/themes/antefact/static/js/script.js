@@ -21,7 +21,7 @@ window.onload = function() {
 
       //if we are in process animation, restart the animation
       if (currentSection==="#process-animation"){
-        processAnim.stop().reset().play(2);
+//       processAnim.stop().reset().play(2);
       }
 
     })
