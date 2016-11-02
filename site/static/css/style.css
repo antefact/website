@@ -9273,6 +9273,12 @@ a:hover {
 #mainNav {
   background-color: transparent;
   border: none;
+  display: none;
+}
+#mainNav.affix {
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 .btn.btn-primary.btn-lg {
   background-color: #fff;

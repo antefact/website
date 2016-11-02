@@ -15,8 +15,6 @@ theme ="antefact"
   name = "Antefact"
 	claim = "Quick design iteration to _build_ interactive futures"
   replacement_verbs= ["generate","design","imagine", "build", "deploy", "fake", "discuss"]
-
-
   [[params.hero.buttons]]
     name="tell me more"
     link="#about"
@@ -85,9 +83,8 @@ theme ="antefact"
 	[params.navigation.links]
 
   [params.navigation.links.blog]
-		name     = "blog"
-		link = "/blog"
-
+		name = "about"
+		link = "#about"
   [params.navigation.links.services]
-  	name     = "services"
-  	link = "#services"
+  	name = "process"
+  	link = "#process-animation"
