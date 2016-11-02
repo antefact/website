@@ -9117,6 +9117,16 @@ body {
     width: 160em !important;
   }
 }
+section.inverted {
+  background-color: black;
+}
+section.inverted h1,
+section.inverted h2,
+section.inverted h3,
+section.inverted h4,
+section.inverted h5 {
+  color: white;
+}
 h1,
 h2,
 h3,
@@ -9383,4 +9393,11 @@ img.responsive-images {
 }
 #process-explained .step .title h2 {
   max-width: 50%;
+}
+#weDo h2 {
+  text-align: center;
+}
+#weDo .wedo-icons .svg {
+  stroke: #fff;
+  fill: transparent;
 }
