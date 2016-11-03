@@ -16,6 +16,7 @@
 @header-line-height: 1.25;
 
 //sizes
+@bp-xsmall: 24em; // 384px
 @bp-small: 48em; // 768px
 @bp-medium: 64em; // 1024px
 @bp-large: 85.375em; // 1366px
@@ -23,6 +24,7 @@
 @bp-xxlarge: 160em; // 2560px
 
 // Media Queries
+@mq-xsmall: ~"(min-width: @{bp-xsmall})";
 @mq-small: ~"(min-width: @{bp-small})";
 @mq-medium: ~"(min-width: @{bp-medium})";
 @mq-large: ~"(min-width: @{bp-large})";
@@ -78,16 +80,19 @@ body {
 }
 
 
-section.inverted{
+
+.inverted{
   h1,
   h2,
   h3,
   h4,
-  h5 {
-    color:white;
+  h5,
+  p {
+    color:@white;
   }
-  background-color: black;
+  background-color: @black;
 }
+
 h1,
 h2,
 h3,
@@ -121,6 +126,7 @@ h1 {
 h2 {
     //  font-size: @base-font-size*3;
     font-size: @base-font-size*2;
+    padding: 1em 0;
     @media @mq-medium {
         font-size: @base-font-size*2;
     }
@@ -159,6 +165,8 @@ a:hover {
 
 .fill {
     height: 100%;
+    min-height: 100%;
+
 }
 
 .middle {
@@ -286,9 +294,21 @@ img.responsive-images {
 
     .roundpic {
         width: 100%;
-        border-radius: 100px;
+        border-radius: 300px;
         border: 10px solid #FDFF59;
         background-color: transparent;
+    }
+    .wrapper{
+      display: table;
+
+      text-align: center;
+
+      @media @mq-small {
+        max-height: 150px;
+        text-align: left;;
+
+      }
+
     }
 }
 
@@ -365,13 +385,52 @@ img.responsive-images {
   h2{
     text-align: center;
   }
+
+  p.description{
+    color: @white;
+  }
+
   .wedo-icons{
     //background-color: #fff;
-
-    .svg{
+      svg{
         stroke:#fff;
         fill:transparent;
+        position: relative;
+
+        @media @mq-xsmall {
+          max-height: 80px;
+        }
+        @media @mq-small {
+          max-height: 150px;
+        }
+        @media @mq-medium {
+
+          max-height: 300px;
+
+        }
+        @media @mq-large {
+        }
+        @media @mq-xlarge {
+        }
+        @media @mq-xxlarge {
+        }
+
+
+
     }
+  }
+
+}
+
+#projects{
+  .img-responsive{
+    overflow: hidden;
+    img{
+      max-width: 100%;
+    }
+  }
+  .description{
+
   }
 
 }

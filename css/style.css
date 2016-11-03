@@ -9117,15 +9117,16 @@ body {
     width: 160em !important;
   }
 }
-section.inverted {
-  background-color: black;
+.inverted {
+  background-color: #000;
 }
-section.inverted h1,
-section.inverted h2,
-section.inverted h3,
-section.inverted h4,
-section.inverted h5 {
-  color: white;
+.inverted h1,
+.inverted h2,
+.inverted h3,
+.inverted h4,
+.inverted h5,
+.inverted p {
+  color: #fff;
 }
 h1,
 h2,
@@ -9176,6 +9177,7 @@ h1 {
 }
 h2 {
   font-size: 2em;
+  padding: 1em 0;
 }
 @media (min-width: 64em) {
   h2 {
@@ -9227,6 +9229,7 @@ a:hover {
 }
 .fill {
   height: 100%;
+  min-height: 100%;
 }
 .middle {
   position: relative;
@@ -9345,9 +9348,19 @@ img.responsive-images {
 }
 #footer .roundpic {
   width: 100%;
-  border-radius: 100px;
+  border-radius: 300px;
   border: 10px solid #FDFF59;
   background-color: transparent;
+}
+#footer .wrapper {
+  display: table;
+  text-align: center;
+}
+@media (min-width: 48em) {
+  #footer .wrapper {
+    max-height: 150px;
+    text-align: left;
+  }
 }
 @media (min-width: 64em) {
   #about .row {
@@ -9397,7 +9410,32 @@ img.responsive-images {
 #weDo h2 {
   text-align: center;
 }
-#weDo .wedo-icons .svg {
+#weDo p.description {
+  color: #fff;
+}
+#weDo .wedo-icons svg {
   stroke: #fff;
   fill: transparent;
+  position: relative;
+}
+@media (min-width: 24em) {
+  #weDo .wedo-icons svg {
+    max-height: 80px;
+  }
+}
+@media (min-width: 48em) {
+  #weDo .wedo-icons svg {
+    max-height: 150px;
+  }
+}
+@media (min-width: 64em) {
+  #weDo .wedo-icons svg {
+    max-height: 300px;
+  }
+}
+#projects .img-responsive {
+  overflow: hidden;
+}
+#projects .img-responsive img {
+  max-width: 100%;
 }

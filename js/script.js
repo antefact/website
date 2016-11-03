@@ -21,7 +21,7 @@ window.onload = function() {
 
       //if we are in process animation, restart the animation
       if (currentSection==="#process-animation"){
-//       processAnim.stop().reset().play(2);
+        //processAnim.stop().reset().play(2);
       }
 
     })
@@ -40,12 +40,12 @@ window.onload = function() {
     });
 
     //load the asset fot the animation
-    var processAnim =new Vivus('process-animation', {duration: 200, file: 'svg/process.svg'}, function(){});
-    var dive =new Vivus('process-explained-dive', {duration: 100, file: 'svg/dive.svg'}, function(){});
+    var processAnim =new Vivus('process-animation', {duration: 200, file: 'svg/assets_process.svg'}, function(){});
+    var dive =new Vivus('process-explained-dive', {duration: 100, file: 'svg/assets_dive.svg'}, function(){});
 
-    var wedoScreen =new Vivus('wedo-screens', {duration: 100, file: 'svg/screen_1.svg'}, function(){});
-    var wedoThings =new Vivus('wedo-things', {duration: 100, file: 'svg/thing.svg'}, function(){});
-    var wedoEnvironment =new Vivus('wedo-environments', {duration: 100, file: 'svg/screen_2.svg'}, function(){});
+    var wedoScreen =new Vivus('wedo-screens', {duration: 100, file: 'svg/assets_screen1.svg'}, function(){});
+    var wedoThings =new Vivus('wedo-things', {duration: 100, file: 'svg/assets_thing1.svg'}, function(){});
+    var wedoEnvironment =new Vivus('wedo-environments', {duration: 100, file: 'svg/assets_screen2.svg'}, function(){});
 
 
     //load the audio file for tofu
@@ -57,8 +57,6 @@ window.onload = function() {
         audioElement.addEventListener("load", function() {
         audioElement.play();
         }, true);
-
-
 
         $('.tofu').click(function() {
         audioElement.play();
@@ -73,15 +71,3 @@ var randomTextInHero= function(){
   var randomtop=$('#hero .claim ul li').outerHeight() * Math.floor(Math.random()*replacement_verbs.length)+9;
   $('#hero .claim ul li').css("top",randomtop*-1); //modify top position
 }
-
-
-
-
-
-/*
-  var replacement_verbs=$('#hero .replacement_verbs li');
-  var randomName=replacement_verbs.eq(Math.floor(Math.random()*replacement_verbs.length)).text();
-  console.log(randomName);
-  $('#hero em').html(randomName);
-  console.log(replacement_verbs);
-*/
