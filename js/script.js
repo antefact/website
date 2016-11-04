@@ -40,7 +40,7 @@ window.onload = function() {
     });
 
     //load the asset fot the animation
-    var processAnim =new Vivus('process-animation', {duration: 200, file: 'svg/assets_process.svg'}, function(){});
+    // var processAnim =new Vivus('process-animation', {duration: 200, file: 'svg/assets_process.svg'}, function(){});
     var dive =new Vivus('process-explained-dive', {duration: 100, file: 'svg/assets_dive.svg'}, function(){});
 
     var wedoScreen =new Vivus('wedo-screens', {duration: 100, file: 'svg/assets_screen1.svg'}, function(){});
