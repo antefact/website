@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/antefact.com/</loc>
+    <loc>http://antefact.com/</loc>
     <lastmod>2016-10-25T11:04:14+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/antefact.com/blog/myfirstPost/</loc>
+    <loc>http://antefact.com/blog/myfirstPost/</loc>
     <lastmod>2016-10-25T11:04:14+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/antefact.com/projects/casaJasmina/</loc>
+    <loc>http://antefact.com/projects/casaJasmina/</loc>
   </url>
   
   <url>
-    <loc>/antefact.com/projects/yibu/</loc>
+    <loc>http://antefact.com/projects/yibu/</loc>
   </url>
   
 </urlset>

@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>antefact.com/index.xml</link>
+    <link>http://antefact.com/index.xml</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Oct 2016 11:04:14 +0800</lastBuildDate>
-    <atom:link href="antefact.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://antefact.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>myfirstPost</title>
-      <link>/antefact.com/blog/myfirstPost/</link>
+      <link>http://antefact.com/blog/myfirstPost/</link>
       <pubDate>Tue, 25 Oct 2016 11:04:14 +0800</pubDate>
       
-      <guid>/antefact.com/blog/myfirstPost/</guid>
+      <guid>http://antefact.com/blog/myfirstPost/</guid>
       <description>&lt;p&gt;this is a first example post&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Casa Jasmina</title>
-      <link>/antefact.com/projects/casaJasmina/</link>
+      <link>http://antefact.com/projects/casaJasmina/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/antefact.com/projects/casaJasmina/</guid>
+      <guid>http://antefact.com/projects/casaJasmina/</guid>
       <description>&lt;p&gt;casa Jasmina was fun&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Yibu</title>
-      <link>/antefact.com/projects/yibu/</link>
+      <link>http://antefact.com/projects/yibu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/antefact.com/projects/yibu/</guid>
+      <guid>http://antefact.com/projects/yibu/</guid>
       <description>&lt;p&gt;yibu&lt;/p&gt;
 </description>
     </item>
