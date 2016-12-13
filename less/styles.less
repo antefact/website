@@ -1,20 +1,17 @@
 @import "bootstrap/bootstrap.less";
 @import "../css/aos.css";
 @import "font-awesome/less/font-awesome.less";
-@import url( 'https://fonts.googleapis.com/css?family=Open+Sans|Space+Mono');
+@import url( 'https://fonts.googleapis.com/css?family=Lato:300,400,900');
 
 //colors
 @yellow: #FDFF59;
 @black: #000;
 @white: #fff;
-
 // Font-Size
 @base-font-size: 1em;
-
 // Line-Height
 @base-line-height: 1.5;
 @header-line-height: 1.25;
-
 //sizes
 @bp-xsmall: 24em; // 384px
 @bp-small: 48em; // 768px
@@ -22,7 +19,6 @@
 @bp-large: 85.375em; // 1366px
 @bp-xlarge: 120em; // 1920px
 @bp-xxlarge: 160em; // 2560px
-
 // Media Queries
 @mq-xsmall: ~"(min-width: @{bp-xsmall})";
 @mq-small: ~"(min-width: @{bp-small})";
@@ -59,38 +55,34 @@ body {
     font-family: 'Space Mono', monospace;
 }
 
+// .container {
+//     @media @mq-small {
+//         width: 48em !important;
+//     }
+//     @media @mq-medium {
+//         width: 64em !important;
+//     }
+//     @media @mq-large {
+//         width: 85em !important;
+//     }
+//     @media @mq-xlarge {
+//         width: 120em !important;
+//     }
+//     @media @mq-xxlarge {
+//         width: 160em !important;
+//     }
+// }
 
-.container{
-  @media @mq-small {
-    width: 48em !important;
-  }
-  @media @mq-medium {
-    width: 64em !important;
-  }
-  @media @mq-large {
-    width: 85em !important;
-  }
-  @media @mq-xlarge {
-    width: 120em !important;
-  }
-  @media @mq-xxlarge {
-    width: 160em !important;
-  }
-
-}
-
-
-
-.inverted{
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  p {
-    color:@white;
-  }
-  background-color: @black;
+.inverted {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        color: @white;
+    }
+    background-color: @black;
 }
 
 h1,
@@ -166,7 +158,6 @@ a:hover {
 .fill {
     height: 100%;
     min-height: 100%;
-
 }
 
 .middle {
@@ -178,8 +169,10 @@ a:hover {
 #hero {
     text-align: center;
     height: 100%;
+
     .claim {
-          margin: 5em 0 3em;
+        margin: 5em 0 3em;
+
         ul {
             display: inline-block;
             margin: 0;
@@ -199,7 +192,6 @@ a:hover {
                 position: relative;
                 .transition(all 1s cubic-bezier(.87,-.41,.19,1.44) );
                 padding: 9px;
-
             }
         }
     }
@@ -248,9 +240,9 @@ a:hover {
     display: none;
 
     &.affix {
-      position: fixed;
-      top: 0px;
-      width: 100%;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 }
 
@@ -287,7 +279,6 @@ img.responsive-images {
     line-height: 2em;
 }
 
-
 #footer {
     min-height: 270px;
     padding-top: 30px;
@@ -298,139 +289,161 @@ img.responsive-images {
         border: 10px solid #FDFF59;
         background-color: transparent;
     }
-    .wrapper{
-      display: table;
 
-      text-align: center;
-
-      @media @mq-small {
-        max-height: 150px;
-        text-align: left;;
-
-      }
-
-    }
-}
-
-
-
-#about{
-
-  .row {
-    @media @mq-medium{
-      display: table;
-    }
-
-    .col-table {
-      @media @mq-small{
-        display: table-cell;
-        float: none;
-        vertical-align: middle;
-      }
-    }
-  }
-
-
-  .special.button{
-    background-color: @yellow;
-    border: none;
-    color: @black;
-    width: 10em;
-    height: 10em;
-    margin: auto;
-    display: block;
-
-    a{
-      color: @black;
-      position: relative;
-      text-overflow: initial;
-      white-space: normal;
-    }
-
-    svg.icon{
-      max-width: 100%;
-      stroke-width: 0.5em;
-    }
-
-    // a:after{
-    //   content: " ";
-    //   background-image: url(../svg/double_arrow.svg);
-    //   height: 100%;
-    //   display: block;
-    // }
-  }
-}
-
-#process-explained{
-  .paragraph{
-    text-align:justify;
-    }
-
-    .drawing{
-      position: absolute;
-      top: -90px;
-      margin: auto;
-    }
-
-    .step .title{
-          text-align: center;
-
-          h2{
-            max-width: 50%
-          }
-    }
-}
-
-#weDo{
-  h2{
-    text-align: center;
-  }
-
-  p.description{
-    color: @white;
-  }
-
-  .wedo-icons{
-    //background-color: #fff;
-      svg{
-        stroke:#fff;
-        fill:transparent;
-        position: relative;
-
-        @media @mq-xsmall {
-          max-height: 80px;
-        }
+    .wrapper {
+        display: table;
+        text-align: center;
         @media @mq-small {
-          max-height: 150px;
+            max-height: 150px;
+            text-align: left;
         }
-        @media @mq-medium {
-
-          max-height: 300px;
-
-        }
-        @media @mq-large {
-        }
-        @media @mq-xlarge {
-        }
-        @media @mq-xxlarge {
-        }
-
-
-
     }
-  }
-
 }
 
-#projects{
-  .img-responsive{
-    overflow: hidden;
-    img{
-      max-width: 100%;
+#about {
+    .row {
+        @media @mq-medium {
+            display: table;
+        }
+
+        .col-table {
+            @media @mq-small {
+                display: table-cell;
+                float: none;
+                vertical-align: middle;
+            }
+        }
     }
-  }
-  .description{
 
+    .special.button {
+        background-color: @yellow;
+        border: none;
+        color: @black;
+        width: 10em;
+        height: 10em;
+        margin: auto;
+        display: block;
+
+        a {
+            color: @black;
+            position: relative;
+            text-overflow: initial;
+            white-space: normal;
+        }
+
+        svg.icon {
+            max-width: 100%;
+            stroke-width: 0.5em;
+        }
+        // a:after{
+        //   content: " ";
+        //   background-image: url(../svg/double_arrow.svg);
+        //   height: 100%;
+        //   display: block;
+        // }
+    }
+}
+
+#process-explained {
+    .paragraph {
+        text-align: justify;
+    }
+
+    .drawing {
+        position: absolute;
+        top: -90px;
+        margin: auto;
+    }
+
+    .step .title {
+        text-align: center;
+
+        h2 {
+            max-width: 50%;
+        }
+    }
+}
+
+#weDo {
+    h2 {
+        text-align: center;
+    }
+
+    p.description {
+        color: @white;
+    }
+
+    .wedo-icons {
+        //background-color: #fff;
+        svg {
+            stroke: #fff;
+            fill: transparent;
+            position: relative;
+            @media @mq-xsmall {
+                max-height: 80px;
+            }
+            @media @mq-small {
+                max-height: 150px;
+            }
+            @media @mq-medium {
+                max-height: 300px;
+            }
+            @media @mq-large {}
+            @media @mq-xlarge {}
+            @media @mq-xxlarge {}
+        }
+    }
+}
+
+
+#projects {
+    .img-responsive {
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .description {
+        color: #ffffff;
+    }
+}
+
+
+#teaser {
+
+  .title-container {
+      background-color: @yellow;
+      width: 100%;
+      height: 4em;
+      margin-bottom: 7em;
+    }
+
+hr{
+  color: #ff6f69;
+      line-height: 2px;
+      border: 1px solid;}
+
+  h1{
+    font-weight: 800;
+    font-size: 5em;
   }
 
+  h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+  p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: large;
+  }
+  .mail{
+    border-bottom: 1px solid @yellow;
+    background-color: @yellow;
+  }
+  .fullWidth{
+    max-width: 100%
+  }
 }
