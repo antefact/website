@@ -5,7 +5,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import "../css/aos.css";
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900|Roboto+Mono');
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -9431,6 +9431,7 @@ img.responsive-images {
 #teaser h1 {
   font-weight: 800;
   font-size: 5em;
+  font-family: 'Roboto Mono', monospace;
 }
 #teaser h3 {
   font-family: 'Lato', sans-serif;
@@ -9440,6 +9441,12 @@ img.responsive-images {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-size: large;
+}
+#teaser a {
+  color: #000;
+}
+#teaser a:hover {
+  background-color: #FDFF59;
 }
 #teaser .mail {
   border-bottom: 1px solid #FDFF59;
