@@ -41,11 +41,11 @@ window.onload = function() {
 
     //load the asset fot the animation
     // var processAnim =new Vivus('process-animation', {duration: 200, file: 'svg/assets_process.svg'}, function(){});
-    var dive =new Vivus('process-explained-dive', {duration: 100, file: 'svg/assets_dive.svg'}, function(){});
-
-    var wedoScreen =new Vivus('wedo-screens', {duration: 100, file: 'svg/assets_screen1.svg'}, function(){});
-    var wedoThings =new Vivus('wedo-things', {duration: 100, file: 'svg/assets_thing1.svg'}, function(){});
-    var wedoEnvironment =new Vivus('wedo-environments', {duration: 100, file: 'svg/assets_screen2.svg'}, function(){});
+    // var dive =new Vivus('process-explained-dive', {duration: 100, file: 'svg/assets_dive.svg'}, function(){});
+    //
+    // var wedoScreen =new Vivus('wedo-screens', {duration: 100, file: 'svg/assets_screen1.svg'}, function(){});
+    // var wedoThings =new Vivus('wedo-things', {duration: 100, file: 'svg/assets_thing1.svg'}, function(){});
+    // var wedoEnvironment =new Vivus('wedo-environments', {duration: 100, file: 'svg/assets_screen2.svg'}, function(){});
 
 
     //load the audio file for tofu
