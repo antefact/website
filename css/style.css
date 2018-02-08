@@ -9252,7 +9252,7 @@ a:hover {
   transform: translateY(-50%);
 }
 #hero .title-container {
-  background-color: #FDFF59;
+  background-color: #e6e6e8;
   width: 100%;
   height: 4em;
   margin-bottom: 7em;
@@ -9313,7 +9313,7 @@ img.responsive-images {
 }
 .underlined {
   display: inline;
-  background: #FDFF59;
+  background: #e6e6e8;
   box-shadow: 10px 10px 0 #fff, -10px 0 0 #000;
   line-height: 2em;
 }
@@ -9324,7 +9324,7 @@ img.responsive-images {
 #footer .roundpic {
   width: 100%;
   border-radius: 300px;
-  border: 10px solid #FDFF59;
+  border: 10px solid #e6e6e8;
   background-color: transparent;
 }
 #footer .wrapper {
@@ -9350,7 +9350,7 @@ img.responsive-images {
   }
 }
 #about .special.button {
-  background-color: #FDFF59;
+  background-color: #e6e6e8;
   border: none;
   color: #000;
   width: 10em;
@@ -9418,7 +9418,7 @@ img.responsive-images {
   color: #ffffff;
 }
 #teaser .title-container {
-  background-color: #FDFF59;
+  background-color: #e6e6e8;
   width: 100%;
   height: 4em;
   margin-bottom: 5em;
@@ -9445,14 +9445,14 @@ img.responsive-images {
 #teaser a {
   color: #000;
   text-decoration: none;
-  border-bottom: 4px solid #FDFF59;
+  border-bottom: 4px solid #e6e6e8;
 }
 #teaser a:hover {
-  background-color: #FDFF59;
+  background-color: #e6e6e8;
 }
 #teaser .mail {
-  border-bottom: 1px solid #FDFF59;
-  background-color: #FDFF59;
+  border-bottom: 1px solid #e6e6e8;
+  background-color: #e6e6e8;
 }
 #teaser .fullWidth {
   max-width: 100%;
